@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Lobster&display=swap");
+
+* {
+  font-family: "Lobster";
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+.bg {
+  position: fixed;
+  filter: brightness(0.3);
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+}
+
+.bg > img {
+  height: 100%;
+  clip: auto;
+}
+
+body {
+  color: black;
+  width: 85%;
+  margin-left: 15%;
+}
+
+.navbar {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  left: 0;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.nav {
+  display: flex;
+}
+
+.navlinks {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks > li {
+  list-style: none;
+  margin: 5px;
+}
+
+.navlinks > li > a {
+  text-decoration: none;
+  font-size: 30px;
+  color: lightsalmon;
+}
+
+.navlinks > li > a:hover {
+  color: whitesmoke;
+}
+
+.logo {
+  height: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.title {
+  height: 32vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title > h1 {
+  margin: auto;
+  font-size: 60px;
+  padding: 0 20px;
+  color: lightsalmon;
+  text-shadow: 2px 2px black;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about * {
+  font-family: "Lato";
+  width: 75%;
+  margin: auto;
+  color: whitesmoke;
+}
+
+.homeContent {
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homeCard1,
+.homeCard2,
+.homeCard3 {
+  width: 25vw;
+  height: 25vw;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeCard2 {
+  background-image: url(/images/aboutA.jpg);
+}
+
+.homeCard3 {
+  background-image: url(/images/aboutC.jpg);
+}
+
+.homeCard1 {
+  background-image: url(/images/aboutB.jpg);
+}
+
+.cardText {
+  text-decoration: none;
+  color: lightsalmon;
+  text-shadow: 2px 2px black;
+  position: relative;
+  bottom: -20vh;
+  font-size: 40px;
+}
+
+.homeCard1:hover,
+.homeCard2:hover,
+.homeCard3:hover {
+  scale: 1.05;
+  filter: saturate(1.2);
+}
+
+.homeCard1:hover > h1,
+.homeCard2:hover > h1,
+.homeCard3:hover > h1 {
+  color: whitesmoke;
+}
