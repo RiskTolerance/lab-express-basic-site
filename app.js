@@ -27,7 +27,9 @@ app.get("/images", (request, response, next) => {
   response.sendFile(__dirname + "/views/images.html");
 });
 
+const PORT = process.env.PORT || 3000;
+
 // Server Started
-app.listen(3000, () => {
-  console.log("My first app listening on port 3000!");
+app.listen(PORT, () => {
+  console.log("My first app listening on port" + PORT);
 });
