@@ -125,15 +125,15 @@ body {
 }
 
 .homeCard2 {
-  background-image: url(/images/aboutA.jpg);
+  background-image: url(/images/AboutA.jpg);
 }
 
 .homeCard3 {
-  background-image: url(/images/aboutC.jpg);
+  background-image: url(/images/AboutC.jpg);
 }
 
 .homeCard1 {
-  background-image: url(/images/aboutB.jpg);
+  background-image: url(/images/AboutB.jpg);
 }
 
 .cardText {
@@ -156,4 +156,8 @@ body {
 .homeCard2:hover > h1,
 .homeCard3:hover > h1 {
   color: whitesmoke;
+}
+
+.niko {
+  margin-top: 20rem;
 }
